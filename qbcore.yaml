@@ -27,13 +27,12 @@ tasks:
   - action: query_database
     file: ./tmp/qbcore/qbcore.sql
 
-  ## oxmysql
   - action: download_file
-    url: https://github.com/overextended/oxmysql/releases/latest/download/oxmysql.zip
-    path: ./tmp/oxmysql.zip
+    path: ./tmp/files/oxmysql.zip
+    url: https://github.com/overextended/oxmysql/releases/download/v2.12.0/oxmysql.zip
   - action: unzip
-    src: ./tmp/oxmysql.zip
-    dest: ./resources/[standalone]/oxmysql
+    dest: ./resources/[standalone]
+    src: ./tmp/files/oxmysql.zip
 
   #############################################################
   # CFX Default Resources
