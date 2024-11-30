@@ -19,12 +19,14 @@ tasks:
   - action: move_path
     src: ./tmp/qbcore/myLogo.png
     dest: ./myLogo.png
+
   #############################################################
   # Database Setup
   #############################################################
   - action: connect_database
   - action: query_database
     file: ./tmp/qbcore/qbcore.sql
+
   #############################################################
   # CFX Default Resources
   #############################################################
@@ -34,6 +36,7 @@ tasks:
     dest: ./resources/[cfx-default]
   - action: remove_path
     path: ./resources/[cfx-default]/[gameplay]/chat
+
   #############################################################
   # QBCore Folder Organization
   #############################################################
@@ -53,40 +56,32 @@ tasks:
   - action: download_github
     src: https://github.com/qbcore-framework/qb-multicharacter
     dest: ./resources/[qb]/[core]/qb-multicharacter
-  - action: waste_time
-    seconds: 10  
 
-	#############################################################
-	# Housing
-	#############################################################
-	- action: download_github
+  ### Housing
+  - action: download_github
     src: https://github.com/qbcore-framework/qb-houses
     dest: ./resources/[qb]/[housing]/qb-houses
-	- action: download_github
+  - action: download_github
     src: https://github.com/qbcore-framework/qb-apartments
     dest: ./resources/[qb]/[housing]/qb-apartments
 
-  #############################################################
-  # QBCore Folder Organization
-  #############################################################
-
+  ### Misc Resources
   - action: download_github
- 	src: https://github.com/qbcore-framework/qb-diving
- 	dest: ./resources/[qb]/[misc]/qb-diving
+    src: https://github.com/qbcore-framework/qb-diving
+    dest: ./resources/[qb]/[misc]/qb-diving
   - action: download_github
-	src: https://github.com/qbcore-framework/qb-doorlock
-	dest: ./resources/[qb]/[misc]/qb-doorlock
+    src: https://github.com/qbcore-framework/qb-doorlock
+    dest: ./resources/[qb]/[misc]/qb-doorlock
   - action: download_github
     src: https://github.com/qbcore-framework/qb-vehiclekeys
     dest: ./resources/[qb]/[misc]/qb-vehiclekeys
 
-
-    ### Shells
+  ### Shells
   - action: download_github
     src: https://github.com/qbcore-framework/qb-interior
     dest: ./resources/[qb]/[shell]/qb-interior
-    
-    ### Jobs
+
+  ### Jobs
   - action: download_github
     src: https://github.com/qbcore-framework/qb-ambulancejob
     dest: ./resources/[qb]/[jobs]/qb-ambulancejob
@@ -111,8 +106,6 @@ tasks:
   - action: download_github
     src: https://github.com/qbcore-framework/qb-recyclejob
     dest: ./resources/[qb]/[jobs]/qb-recyclejob
-  - action: waste_time
-    seconds: 10
 
   ### Crime Resources
   - action: download_github
@@ -130,8 +123,6 @@ tasks:
   - action: download_github
     src: https://github.com/qbcore-framework/qb-streetraces
     dest: ./resources/[qb]/[crime]/qb-streetraces
-  - action: waste_time
-    seconds: 10
 
   ### Systems
   - action: download_github
@@ -149,8 +140,6 @@ tasks:
   - action: download_github
     src: https://github.com/qbcore-framework/qb-crypto
     dest: ./resources/[qb]/[systems]/qb-crypto
-  - action: waste_time
-    seconds: 10
 
   ### UI Resources
   - action: download_github
@@ -174,8 +163,6 @@ tasks:
   - action: download_github
     src: https://github.com/qbcore-framework/qb-minigames
     dest: ./resources/[qb]/[ui]/qb-minigames
-  - action: waste_time
-    seconds: 10 
 
   #############################################################
   # Standalone Resources
@@ -221,17 +208,11 @@ tasks:
     ref: master
     src: https://github.com/qbcore-framework/connectqueue
   - action: download_github
-    dest: ./resources/[standalone]/PolyZone
-    ref: master
-    src: https://github.com/qbcore-framework/PolyZone
-  - action: download_github
     dest: ./resources/[standalone]/LegacyFuel
     ref: master
     src: https://github.com/qbcore-framework/LegacyFuel
-  - action: waste_time # prevent github throttling
-    seconds: 10
 
-    # MAPS
+  # Maps
   - action: download_github
     dest: ./resources/[defaultmaps]/hospital_map
     ref: main
@@ -241,13 +222,11 @@ tasks:
     ref: main
     src: https://github.com/qbcore-framework/dealer_map
   - action: download_github
-    dest: ./resources/[defaultmaps]/[prison_map]
+    dest: ./resources/[defaultmaps]/prison_map
     ref: main
     src: https://github.com/qbcore-framework/prison_map
-  - action: waste_time # prevent github throttling
-    seconds: 10
 
-   # VOICE
+  # Voice
   - action: download_github
     dest: ./resources/[voice]/pma-voice
     ref: main
