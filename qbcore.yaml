@@ -27,6 +27,14 @@ tasks:
   - action: query_database
     file: ./tmp/qbcore/qbcore.sql
 
+	## oxmysql
+  - action: download_file
+    url: https://github.com/overextended/oxmysql/releases/latest/download/oxmysql.zip
+    path: ./tmp/oxmysql.zip
+  - action: unzip
+    src: ./tmp/oxmysql.zip
+    dest: ./resources/[standalone]/oxmysql
+
   #############################################################
   # CFX Default Resources
   #############################################################
@@ -182,12 +190,6 @@ tasks:
   #############################################################
   # Standalone Resources
   #############################################################
-  - action: download_file
-    path: ./tmp/files/oxmysql.zip
-    url: https://github.com/overextended/oxmysql/releases/download/v2.12.0/oxmysql.zip
-  - action: unzip
-    dest: ./resources/[standalone]/oxmysql
-    src: ./tmp/files/oxmysql.zip
   - action: download_file
     path: ./tmp/menuv.zip
     url: https://github.com/ThymonA/menuv/releases/download/v1.4.1/menuv_v1.4.1.zip
