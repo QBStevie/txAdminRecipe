@@ -130,9 +130,6 @@ tasks:
   - action: download_github
     src: https://github.com/qbcore-framework/qb-streetraces
     dest: ./resources/[qb]/[crime]/qb-streetraces
-  - action: download_github
-    src: https://github.com/qbcore-framework/qb-diving
-    dest: ./resources/[qb]/[crime]/qb-diving
   - action: waste_time
     seconds: 10
 
