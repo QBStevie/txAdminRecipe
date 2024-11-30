@@ -89,6 +89,9 @@ tasks:
   - action: download_github
     src: https://github.com/qbcore-framework/qb-vehiclekeys
     dest: ./resources/[qb]/[misc]/qb-vehiclekeys
+  - action: download_github
+    src: https://github.com/qbcore-framework/qb-crypto
+    dest: ./resources/[qb]/[misc]/qb-crypto
 
   ### Shells
   - action: download_github
@@ -158,8 +161,8 @@ tasks:
     src: https://github.com/qbcore-framework/qb-banking
     dest: ./resources/[qb]/[systems]/qb-banking
   - action: download_github
-    src: https://github.com/qbcore-framework/qb-crypto
-    dest: ./resources/[qb]/[systems]/qb-crypto
+    src: https://github.com/qbcore-framework/qb-weathersync
+    dest: ./resources/[qb]/[systems]/qb-weathersync
   - action: waste_time # prevent github throttling
     seconds: 10
 
@@ -204,7 +207,7 @@ tasks:
   - action: download_github
     dest: ./resources/[standalone]/bob74_ipl
     ref: master
-    src: https://github.com/qbcore-framework/bob74_ipl
+    src: https://github.com/Bob74/bob74_ipl
   - action: download_github
     dest: ./resources/[standalone]/safecracker
     ref: main
