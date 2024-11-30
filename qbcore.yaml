@@ -56,6 +56,9 @@ tasks:
   - action: download_github
     src: https://github.com/qbcore-framework/qb-multicharacter
     dest: ./resources/[qb]/[core]/qb-multicharacter
+  - action: download_github
+    src: https://github.com/qbcore-framework/qb-clothing
+    dest: ./resources/[qb]/[core]/qb-clothing
   - action: waste_time # prevent github throttling
     seconds: 10
 
