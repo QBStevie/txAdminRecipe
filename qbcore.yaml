@@ -92,6 +92,9 @@ tasks:
   - action: download_github
     src: https://github.com/qbcore-framework/qb-crypto
     dest: ./resources/[qb]/[misc]/qb-crypto
+  - action: download_github
+    src: https://github.com/qbcore-framework/qb-smallresources
+    dest: ./resources/[qb]/[misc]/qb-smallresources
 
   ### Shells
   - action: download_github
