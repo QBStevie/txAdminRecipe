@@ -53,6 +53,9 @@ tasks:
     src: https://github.com/qbcore-framework/qb-management
     dest: ./resources/[qb]/[core]/qb-management
   - action: download_github
+    src: https://github.com/qbcore-framework/qb-spawn
+    dest: ./resources/[qb]/[core]/qb-spawn
+  - action: download_github
     src: https://github.com/qbcore-framework/qb-multicharacter
     dest: ./resources/[qb]/[core]/qb-multicharacter
   - action: download_github
@@ -69,6 +72,13 @@ tasks:
   - action: download_github
     src: https://github.com/qbcore-framework/qb-doorlock
     dest: ./resources/[qb]/[core]/qb-doorlock
+
+  #############################################################
+  # QBCore Folder Organization
+  #############################################################
+  - action: download_github
+    src: https://github.com/qbcore-framework/qb-interior
+    dest: ./resources/[qb]/[shell]/qb-interior
 
   ### Jobs
   - action: download_github
@@ -97,7 +107,6 @@ tasks:
     dest: ./resources/[qb]/[jobs]/qb-recyclejob
   - action: waste_time
     seconds: 10
-
 
   ### Crime Resources
   - action: download_github
@@ -159,6 +168,9 @@ tasks:
   - action: download_github
     src: https://github.com/qbcore-framework/qb-scoreboard
     dest: ./resources/[qb]/[ui]/qb-scoreboard
+  - action: download_github
+    src: https://github.com/qbcore-framework/qb-minigames
+    dest: ./resources/[qb]/[ui]/qb-minigames
 
   #############################################################
   # Standalone Resources
@@ -169,13 +181,66 @@ tasks:
   - action: unzip
     dest: ./resources/[standalone]/oxmysql
     src: ./tmp/files/oxmysql.zip
-
   - action: download_file
     path: ./tmp/menuv.zip
     url: https://github.com/ThymonA/menuv/releases/download/v1.4.1/menuv_v1.4.1.zip
   - action: unzip
     dest: ./resources/[standalone]/menuv
     src: ./tmp/menuv.zip
+  - action: download_github
+    dest: ./resources/[standalone]/PolyZone
+    ref: master
+    src: https://github.com/qbcore-framework/PolyZone
+  - action: download_github
+    dest: ./resources/[standalone]/bob74_ipl
+    ref: master
+    src: https://github.com/qbcore-framework/bob74_ipl
+  - action: download_github
+    dest: ./resources/[standalone]/safecracker
+    ref: main
+    src: https://github.com/qbcore-framework/safecracker
+  - action: download_github
+    dest: ./resources/[standalone]/screenshot-basic
+    ref: master
+    src: https://github.com/citizenfx/screenshot-basic
+  - action: download_github
+    dest: ./resources/[standalone]/progressbar
+    ref: main
+    src: https://github.com/qbcore-framework/progressbar
+  - action: download_github
+    dest: ./resources/[standalone]/interact-sound
+    ref: master
+    src: https://github.com/qbcore-framework/interact-sound
+  - action: download_github
+    dest: ./resources/[standalone]/connectqueue
+    ref: master
+    src: https://github.com/qbcore-framework/connectqueue
+  - action: download_github
+    dest: ./resources/[standalone]/PolyZone
+    ref: master
+    src: https://github.com/qbcore-framework/PolyZone
+  - action: download_github
+    dest: ./resources/[standalone]/LegacyFuel
+    ref: master
+    src: https://github.com/qbcore-framework/LegacyFuel
+  - action: waste_time # prevent github throttling
+    seconds: 10
+
+    # MAPS
+  - action: download_github
+    dest: ./resources/[defaultmaps]/hospital_map
+    ref: main
+    src: https://github.com/qbcore-framework/hospital_map
+  - action: download_github
+    dest: ./resources/[defaultmaps]/dealer_map
+    ref: main
+    src: https://github.com/qbcore-framework/dealer_map
+  - action: download_github
+    dest: ./resources/[defaultmaps]/[prison_map]
+    ref: main
+    src: https://github.com/qbcore-framework/prison_map
+  - action: waste_time # prevent github throttling
+    seconds: 10
 
   #############################################################
   # Cleanup
