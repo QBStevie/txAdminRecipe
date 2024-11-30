@@ -153,6 +153,9 @@ tasks:
     src: https://github.com/qbcore-framework/qb-inventory
     dest: ./resources/[qb]/[systems]/qb-inventory
   - action: download_github
+    src: https://github.com/qbcore-framework/qb-shops 
+    dest: ./resources/[qb]/[systems]/qb-shops
+  - action: download_github
     src: https://github.com/qbcore-framework/qb-weapons
     dest: ./resources/[qb]/[systems]/qb-weapons
   - action: download_github
@@ -161,6 +164,9 @@ tasks:
   - action: download_github
     src: https://github.com/qbcore-framework/qb-banking
     dest: ./resources/[qb]/[systems]/qb-banking
+  - action: download_github
+    src: https://github.com/qbcore-framework/qb-vehicleshop
+    dest: ./resources/[qb]/[systems]/qb-vehicleshop
   - action: download_github
     src: https://github.com/qbcore-framework/qb-weathersync
     dest: ./resources/[qb]/[systems]/qb-weathersync
@@ -177,6 +183,9 @@ tasks:
   - action: download_github
     src: https://github.com/qbcore-framework/qb-input
     dest: ./resources/[qb]/[ui]/qb-input
+  - action: download_github
+    src: https://github.com/qbcore-framework/qb-target
+    dest: ./resources/[qb]/[ui]/qb-target
   - action: download_github
     src: https://github.com/qbcore-framework/qb-loading
     dest: ./resources/[qb]/[ui]/qb-loading
