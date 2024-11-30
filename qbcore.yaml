@@ -122,11 +122,12 @@ tasks:
   - action: download_github
     src: https://github.com/qbcore-framework/qb-vineyard
     dest: ./resources/[qb]/[jobs]/qb-vineyard
+  - action: waste_time # prevent github throttling
+    seconds: 10
   - action: download_github
     src: https://github.com/qbcore-framework/qb-recyclejob
     dest: ./resources/[qb]/[jobs]/qb-recyclejob
-  - action: waste_time # prevent github throttling
-    seconds: 10
+
 
   ### Crime Resources
   - action: download_github
