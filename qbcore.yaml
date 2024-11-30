@@ -13,21 +13,18 @@ tasks:
     src: https://github.com/QBStevie/txAdminRecipe
     ref: main
     dest: ./tmp/qbcore
-
   - action: move_path
     src: ./tmp/qbcore/server.cfg
     dest: ./server.cfg
   - action: move_path
     src: ./tmp/qbcore/myLogo.png
     dest: ./myLogo.png
-
   #############################################################
   # Database Setup
   #############################################################
   - action: connect_database
   - action: query_database
     file: ./tmp/qbcore/qbcore.sql
-
   #############################################################
   # CFX Default Resources
   #############################################################
@@ -35,10 +32,8 @@ tasks:
     src: https://github.com/citizenfx/cfx-server-data
     subpath: resources
     dest: ./resources/[cfx-default]
-
   - action: remove_path
     path: ./resources/[cfx-default]/[gameplay]/chat
-
   #############################################################
   # QBCore Folder Organization
   #############################################################
@@ -72,14 +67,12 @@ tasks:
   - action: download_github
     src: https://github.com/qbcore-framework/qb-doorlock
     dest: ./resources/[qb]/[core]/qb-doorlock
-
   #############################################################
   # QBCore Folder Organization
   #############################################################
   - action: download_github
     src: https://github.com/qbcore-framework/qb-interior
     dest: ./resources/[qb]/[shell]/qb-interior
-
   ### Jobs
   - action: download_github
     src: https://github.com/qbcore-framework/qb-ambulancejob
@@ -171,6 +164,8 @@ tasks:
   - action: download_github
     src: https://github.com/qbcore-framework/qb-minigames
     dest: ./resources/[qb]/[ui]/qb-minigames
+  - action: waste_time
+    seconds: 10 
 
   #############################################################
   # Standalone Resources
