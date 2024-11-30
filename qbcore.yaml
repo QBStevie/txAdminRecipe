@@ -53,27 +53,40 @@ tasks:
   - action: download_github
     src: https://github.com/qbcore-framework/qb-multicharacter
     dest: ./resources/[qb]/[core]/qb-multicharacter
-  - action: download_github
-    src: https://github.com/qbcore-framework/qb-houses
-    dest: ./resources/[qb]/[core]/qb-houses
-  - action: download_github
-    src: https://github.com/qbcore-framework/qb-apartments
-    dest: ./resources/[qb]/[core]/qb-apartments
-  - action: download_github
-    src: https://github.com/qbcore-framework/qb-vehiclekeys
-    dest: ./resources/[qb]/[core]/qb-vehiclekeys
   - action: waste_time
     seconds: 10  
-  - action: download_github
-    src: https://github.com/qbcore-framework/qb-doorlock
-    dest: ./resources/[qb]/[core]/qb-doorlock
+
+	#############################################################
+	# Housing
+	#############################################################
+	- action: download_github
+    src: https://github.com/qbcore-framework/qb-houses
+    dest: ./resources/[qb]/[housing]/qb-houses
+	- action: download_github
+    src: https://github.com/qbcore-framework/qb-apartments
+    dest: ./resources/[qb]/[housing]/qb-apartments
+
   #############################################################
   # QBCore Folder Organization
   #############################################################
+
+  - action: download_github
+ 	src: https://github.com/qbcore-framework/qb-diving
+ 	dest: ./resources/[qb]/[misc]/qb-diving
+  - action: download_github
+	src: https://github.com/qbcore-framework/qb-doorlock
+	dest: ./resources/[qb]/[misc]/qb-doorlock
+  - action: download_github
+    src: https://github.com/qbcore-framework/qb-vehiclekeys
+    dest: ./resources/[qb]/[misc]/qb-vehiclekeys
+
+
+    ### Shells
   - action: download_github
     src: https://github.com/qbcore-framework/qb-interior
     dest: ./resources/[qb]/[shell]/qb-interior
-  ### Jobs
+    
+    ### Jobs
   - action: download_github
     src: https://github.com/qbcore-framework/qb-ambulancejob
     dest: ./resources/[qb]/[jobs]/qb-ambulancejob
@@ -236,6 +249,16 @@ tasks:
     src: https://github.com/qbcore-framework/prison_map
   - action: waste_time # prevent github throttling
     seconds: 10
+
+   # VOICE
+  - action: download_github
+    dest: ./resources/[voice]/pma-voice
+    ref: main
+    src: https://github.com/AvarianKnight/pma-voice
+  - action: download_github
+    dest: ./resources/[voice]/qb-radio
+    ref: main
+    src: https://github.com/qbcore-framework/qb-radio
 
   #############################################################
   # Cleanup
