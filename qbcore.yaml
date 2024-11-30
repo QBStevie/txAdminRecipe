@@ -56,6 +56,8 @@ tasks:
   - action: download_github
     src: https://github.com/qbcore-framework/qb-multicharacter
     dest: ./resources/[qb]/[core]/qb-multicharacter
+  - action: waste_time # prevent github throttling
+    seconds: 10
 
   ### Housing
   - action: download_github
@@ -80,6 +82,8 @@ tasks:
   - action: download_github
     src: https://github.com/qbcore-framework/qb-interior
     dest: ./resources/[qb]/[shell]/qb-interior
+  - action: waste_time # prevent github throttling
+    seconds: 10
 
   ### Jobs
   - action: download_github
@@ -106,6 +110,8 @@ tasks:
   - action: download_github
     src: https://github.com/qbcore-framework/qb-recyclejob
     dest: ./resources/[qb]/[jobs]/qb-recyclejob
+  - action: waste_time # prevent github throttling
+    seconds: 10
 
   ### Crime Resources
   - action: download_github
@@ -123,6 +129,8 @@ tasks:
   - action: download_github
     src: https://github.com/qbcore-framework/qb-streetraces
     dest: ./resources/[qb]/[crime]/qb-streetraces
+  - action: waste_time # prevent github throttling
+    seconds: 10
 
   ### Systems
   - action: download_github
@@ -140,6 +148,8 @@ tasks:
   - action: download_github
     src: https://github.com/qbcore-framework/qb-crypto
     dest: ./resources/[qb]/[systems]/qb-crypto
+  - action: waste_time # prevent github throttling
+    seconds: 10
 
   ### UI Resources
   - action: download_github
@@ -163,6 +173,8 @@ tasks:
   - action: download_github
     src: https://github.com/qbcore-framework/qb-minigames
     dest: ./resources/[qb]/[ui]/qb-minigames
+  - action: waste_time # prevent github throttling
+    seconds: 10
 
   #############################################################
   # Standalone Resources
@@ -199,6 +211,8 @@ tasks:
     dest: ./resources/[standalone]/progressbar
     ref: main
     src: https://github.com/qbcore-framework/progressbar
+  - action: waste_time # prevent github throttling
+    seconds: 10
   - action: download_github
     dest: ./resources/[standalone]/interact-sound
     ref: master
