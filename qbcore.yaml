@@ -137,6 +137,9 @@ tasks:
     src: https://github.com/qbcore-framework/qb-storerobbery
     dest: ./resources/[qb]/[crime]/qb-storerobbery
   - action: download_github
+    src: https://github.com/qbcore-framework/qb-drugs
+    dest: ./resources/[qb]/[crime]/qb-drugs
+  - action: download_github
     src: https://github.com/qbcore-framework/qb-truckrobbery
     dest: ./resources/[qb]/[crime]/qb-truckrobbery
   - action: download_github
