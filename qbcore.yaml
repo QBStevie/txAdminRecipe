@@ -156,6 +156,9 @@ tasks:
   - action: download_github
     src: https://github.com/qbcore-framework/qb-lapraces
     dest: ./resources/[qb]/[crime]/qb-lapraces
+  - action: download_github
+    src: https://github.com/qbcore-framework/qb-streetraces
+    dest: ./resources/[qb]/[crime]/qb-streetraces
   - action: waste_time # prevent github throttling
     seconds: 10
 
