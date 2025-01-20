@@ -131,7 +131,6 @@ tasks:
     src: https://github.com/qbcore-framework/qb-recyclejob
     dest: ./resources/[qb]/[jobs]/qb-recyclejob
 
-
   ### Crime Resources
   - action: download_github
     src: https://github.com/qbcore-framework/qb-storerobbery
@@ -149,8 +148,14 @@ tasks:
     src: https://github.com/qbcore-framework/qb-weed
     dest: ./resources/[qb]/[crime]/qb-weed
   - action: download_github
-    src: https://github.com/qbcore-framework/qb-streetraces
-    dest: ./resources/[qb]/[crime]/qb-streetraces
+    src: https://github.com/qbcore-framework/qb-houserobbery
+    dest: ./resources/[qb]/[crime]/qb-houserobbery
+  - action: download_github
+    src: https://github.com/qbcore-framework/qb-jewelery
+    dest: ./resources/[qb]/[crime]/qb-jewelery
+  - action: download_github
+    src: https://github.com/qbcore-framework/qb-lapraces
+    dest: ./resources/[qb]/[crime]/qb-lapraces
   - action: waste_time # prevent github throttling
     seconds: 10
 
