@@ -257,10 +257,10 @@ tasks:
     dest: ./resources/[standalone]/connectqueue
     ref: master
     src: https://github.com/qbcore-framework/connectqueue
-  - action: download_github
-    dest: ./resources/[standalone]/LegacyFuel
-    ref: master
-    src: https://github.com/qbcore-framework/LegacyFuel
+   - action: download_github
+    dest: ./resources/[qb]/qb-fuel
+    ref: main
+    src: https://github.com/qbcore-framework/qb-fuel
 
   # Maps
   - action: download_github
@@ -291,3 +291,4 @@ tasks:
   #############################################################
   - action: remove_path
     path: ./tmp
+
