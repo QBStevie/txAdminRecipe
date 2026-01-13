@@ -32,7 +32,7 @@ tasks:
 
   - action: download_file
     path: ./tmp/files/oxmysql.zip
-    url: https://github.com/overextended/oxmysql/releases/download/v2.12.0/oxmysql.zip
+    url: https://github.com/CommunityOx/oxmysql/releases/download/v2.12.3/oxmysql.zip
 
   - action: waste_time # prevent github throttling
     seconds: 10
@@ -359,3 +359,4 @@ tasks:
   #############################################################
   - action: remove_path
     path: ./tmp
+
